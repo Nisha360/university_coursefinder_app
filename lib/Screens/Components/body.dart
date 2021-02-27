@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:university_coursefinder_app/Screens/DataConnect.dart';
-// import 'package:university_coursefinder_app/Screens/viewcourse.dart';
+import 'package:university_coursefinder_app/Screens/course.dart';
 import 'package:university_coursefinder_app/Screens/Colleges.dart';
 import 'package:university_coursefinder_app/Screens/veiw_course.dart';
 import 'package:university_coursefinder_app/constants.dart';
