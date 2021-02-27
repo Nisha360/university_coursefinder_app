@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:university_coursefinder_app/Screens/profile_screen.dart';
 import 'package:university_coursefinder_app/Screens/setting_screen.dart';
 import 'package:university_coursefinder_app/Screens/logout_screen.dart';
+import 'package:university_coursefinder_app/chatting.dart';
 
 class MainDrawer extends StatelessWidget {
   @override
@@ -57,6 +58,21 @@ class MainDrawer extends StatelessWidget {
                   Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) => ProfileScreen(),
+                ));
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text(
+                'Chat',
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              onTap: () {
+                Navigator.of(context).pop();
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) => ChatApp(),
                 ));
               },
             ),

@@ -21,11 +21,10 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-<<<<<<< HEAD
-=======
+
 
   get: ^3.25.4 
->>>>>>> 53464a341e37f7367aa93de80f1dc8c572489440
+
   flutter:
     sdk: flutter
    
@@ -41,6 +40,8 @@ dependencies:
   flutter_signin_button: ^1.1.0
   firebase_core: ^0.7.0 
   firebase_auth: ^0.20.0+1
+  firebase_database: ^6.0.0
+  cloud_firestore: ^0.16.0+1
   
   
   

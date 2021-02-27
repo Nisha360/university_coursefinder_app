@@ -40,11 +40,11 @@ class _SearchState extends State<Search> {
           color: Colors.deepPurple[100], 
           child: SizedBox( 
             width: 300, 
-<<<<<<< HEAD
-            height: 100, 
-=======
-            height: 150, 
->>>>>>> 1b8642460d1b5ffb8b525ffb4f0d3830ff7e257c
+
+
+
+            height: 150,
+
             child: Padding( 
               padding: const EdgeInsets.all(20.0), 
               child: Column( 

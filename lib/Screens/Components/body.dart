@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:university_coursefinder_app/Screens/Courses.dart';
-import 'package:university_coursefinder_app/Screens/univer_clg.dart';
+import 'package:university_coursefinder_app/Screens/ViewData.dart';
 import 'package:university_coursefinder_app/Screens/veiw_course.dart';
 import 'package:university_coursefinder_app/constants.dart';
 
@@ -63,7 +63,7 @@ class MyButtons extends StatelessWidget{
               onTap: () {
                 // Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => UniverClg(),
+                  builder: (context) => ViewData(),
                 ));
               },
               child: Container(
