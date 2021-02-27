@@ -2,13 +2,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:university_coursefinder_app/Screens/DataConnect.dart';
-import 'package:university_coursefinder_app/Screens/course.dart';
-import 'package:university_coursefinder_app/Screens/Colleges.dart';
+import 'package:university_coursefinder_app/Screens/Courses.dart';
+import 'package:university_coursefinder_app/Screens/ViewData.dart';
 import 'package:university_coursefinder_app/Screens/veiw_course.dart';
 import 'package:university_coursefinder_app/constants.dart';
 
-import '../ViewData.dart';
+import '../Courses.dart';
 class Body extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -16,7 +15,6 @@ class Body extends StatelessWidget{
       children: <Widget>[SearchBox(onChanged: (value) {},
       ),
         MyButtons(),
-        MyCard(),
       ],
 
     );
@@ -108,7 +106,7 @@ class MyButtons extends StatelessWidget{
               onTap: ()  {
                 // Navigator.of(context).pop();
                 Navigator.push(context, MaterialPageRoute(
-                  builder: (context) => ViewData(),
+                  builder: (context) => ViewCourse(),
                 ));
               },
               child: Container(
@@ -130,7 +128,7 @@ class MyButtons extends StatelessWidget{
                           .apply(color: Colors.black),
                       ),
                       decoration: BoxDecoration(
-                          color: Colors.deepPurpleAccent,
+                          color: Colors.greenAccent,
                           borderRadius: BorderRadius.only(
                               bottomLeft: Radius.circular(98.0),
                               topLeft: Radius.circular(98.0),
@@ -152,79 +150,4 @@ class MyButtons extends StatelessWidget{
     );
   }
 }
-
-class MyCard extends StatelessWidget {
-  Widget build(BuildContext context) {
-    
-    return Center( 
-        /** Card Widget **/
-        child: Card( 
-          elevation: 50, 
-          shadowColor: Colors.black, 
-          color: Colors.grey[100], 
-          child: SizedBox( 
-            width: 300, 
-            height: 200, 
-            child: Padding( 
-              padding: const EdgeInsets.all(20.0), 
-              child: Column( 
-                children: [ 
-                  CircleAvatar( 
-                    backgroundColor: Colors.green[500], 
-                    radius: 20, 
-                    // child: CircleAvatar( 
-                    //   backgroundImage: NetworkImage( 
-                    //       "https://pbs.twimg.com/profile_images/1304985167476523008/QNHrwL2q_400x400.jpg"), //NetworkImage 
-                    //   radius: 100, 
-                    // ), //CircleAvatar 
-                  ), 
-                  //CirclAvatar 
-                  SizedBox( 
-                    height: 10, 
-                  ), //SizedBox 
-                  
-                  SizedBox( 
-                    height: 10, 
-                  ), //SizedBox 
-                  Text( 
-                    "Facing difficulties in selecting the right College and Course?",
-                    style: TextStyle( 
-                      fontSize: 15, 
-                      color: Colors.black, 
-                    ), //Textstyle 
-                  ), //Text 
-                  SizedBox( 
-                    height: 10, 
-                  ), //SizedBox 
-                  SizedBox( 
-                    width: 150, 
-                    child: RaisedButton( 
-                      onPressed: () => null, 
-                      color: Colors.deepPurpleAccent, 
-                      child: Padding( 
-                        padding: const EdgeInsets.all(4.0), 
-                        child: Row( 
-                          children: [ 
-                            Icon(Icons.touch_app), 
-                            Text('Get Started'), 
-                          ], 
-                        ), //Row 
-                      ), //Padding 
-                    ), //RaisedButton 
-                  ) //SizedBox 
-                ], 
-              ), //Column 
-            ), //Padding 
-          ), //SizedBox 
-        ), //Card 
-      );
-
-    }
-
-}
-
-
-
-
-
 
